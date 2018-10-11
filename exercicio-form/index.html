@@ -1,0 +1,56 @@
+<!doctype html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <link rel="stylesheet"
+    type="text/css"
+    href="css/style.css">
+</head>
+<body>
+
+    <form action="obrigada.html" method="POST">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Seu nome" name="nome">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Seu email" name="email" required>
+        </div>
+
+        <label for="endereço">Endereço:</label>
+        <input type="text" placeholder="Seu endereço" name="endereço">
+
+        <div>
+            <select name="assunto"> <!--Lista suspensa, dropdown, combo box-->
+                <option value="" selected disabled>Selecione um assunto</option>
+                <option value="contato">Contato</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="critica">Crítica</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" name="planta" value="alerim">Eu gosto de alecrim
+            <input type="checkbox" name="planta" value="lavanda">Eu gosto de lavanda
+            <input type="checkbox" name="planta" value="samambaia">Eu gosto de samambaia
+        </div>
+
+        <div>
+            <input type="radio" name="zona" value="centro"> Zona Central
+            <input type="radio" name="zona" value="sul"> Zona Sul
+            <input type="radio" name="zona" value="norte"> Zona Norte
+            <input type="radio" name="zona" value="leste"> Zona Leste
+            <input type="radio" name="zona" value="oeste"> Zona Oeste
+        </div>
+        
+        <textarea name="mensagem" cols="100" rows="10" maxlength="300" placeholder="Digite aqui seu texto"></textarea>
+
+        <input type="submit" value="Batata">
+    </form>
+</body>
+</html>
